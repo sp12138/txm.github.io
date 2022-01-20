@@ -108,6 +108,10 @@
         // document.getElementById("div_timer").style = "white-space:pre;";
         //显示时间
         document.getElementById("div_timer").innerText = p(year)+"-"+p(month) +"-"+p(day) +" "+ p(hour) + ":" + p(minutes) + ":" + p(seconds);
+
+        document.getElementById("div_timer2").style = "white-space:pre;";
+        //显示时间
+        document.getElementById("div_timer2").innerText = "有效时间至"+": "+" "+p(year)+"-"+p(month) +"-"+p(day) +" "+ "23" + ":" + "59" + ":" + "59";
     }
     setInterval("showTime()", 1000);
     //月日时分秒小于10补0
@@ -123,7 +127,7 @@
 <div class="content-box">
 
     <div class="top-title">
-        <h3>张瑜奕通行码</h3>
+        <h3>张余亦通行码</h3>
         
         
             
@@ -141,6 +145,10 @@
     
         <strong><div class="time2" id="div_timer"></div></strong>
     
+        
+
+
+    
     <div class="qr">
         
             <div id="output"></div>
@@ -148,9 +156,13 @@
     </div>
 
     
-        <div class="time">有效时间至：2021-11-20 23:59:59</div>
+     <div class="time" id="div_timer2"></div>
     
-    <div id="hzjkm"></div>
+
+    
+    
+    
+
 
 
     <div id="dateTime"></div>
